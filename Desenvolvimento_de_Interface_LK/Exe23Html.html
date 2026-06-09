@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Seletores CSS</title>
+  <style>
+
+    /* SELETOR DE TIPO — afeta todos os elementos daquela tag */
+    body{
+        background-color: lightgrey;
+    }
+
+    h1 {
+        color: salmon;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    p {
+        color: black;
+
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a {
+        color: blue;
+        font-style: italic;
+    }
+
+    li {
+        color: mediumpurple;
+        font-style: normal;
+        font-weight: 800;
+    }
+    /* SELETOR DE CLASSE — afeta elementos com class="..." */
+
+    .destaque {
+        color: lightskyblue;
+        margin: 20px auto;
+        padding: 20px auto;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .alerta {
+        color: yellow;
+        margin: 20px auto;
+        padding: 20px auto;
+        font-style: normal;
+        font-weight: 500;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .secundario {
+        color: burlywood;
+        margin: 20px auto;
+        padding: 2px auto;
+        font-style: normal;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* SELETOR DE ID — afeta o elemento único com id="..." */
+
+    #cabecalho {
+        color: brown;
+        margin: 10px auto;
+        padding: 10px auto;
+        font-style: italic;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #rodape {
+        color: black;
+        margin: 10px auto;
+        padding: 10px auto;
+        font-style: italic;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header id="cabecalho">
+    <h1>Título da Página</h1>
+  </header>
+
+  <main>
+    <p>Parágrafo comum.</p>
+    <p class="destaque">Parágrafo com classe destaque.</p>
+    <p class="alerta">Parágrafo com classe alerta.</p>
+    <p class="secundario">Parágrafo com classe secundario.</p>
+
+    <ul>
+      <li>Item comum</li>
+      <li class="destaque">Item com classe destaque</li>
+      <li class="alerta">Item com classe alerta</li>
+    </ul>
+
+    <a href="#">Link comum</a>
+  </main>
+
+  <footer id="rodape">
+    <p>Rodapé da página.</p>
+  </footer>
+
+</body>
+</html>
