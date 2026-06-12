@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 19 - Inscrição no Evento</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Detalhes e Inscrição no Evento</legend>
+
+            <label for="nomeEvento">Nome Completo:</label>
+            <input type="text" id="nomeEvento" name="nomeEvento" required placeholder="Seu nome completo">
+            <br><br>
+
+            <label for="emailEvento">E-mail:</label>
+            <input type="email" id="emailEvento" name="emailEvento" required placeholder="email@dominio.com">
+            <br><br>
+
+            <label for="idade">Idade (14 a 100 anos):</label>
+            <input type="number" id="idade" name="idade" min="14" max="100" required>
+            <br><br>
+
+            <label for="dataEvento">Data do Evento:</label>
+            <input type="date" id="dataEvento" name="dataEvento" min="2026-04-07" required>
+            <br><br>
+
+            <label for="horarioEvento">Horário Preferido:</label>
+            <input type="time" id="horarioEvento" name="horarioEvento">
+            <br><br>
+
+            <label>Modalidade do Evento:</label><br>
+            <input type="radio" id="modPresencial" name="modalidade" value="presencial" required>
+            <label for="modPresencial">Presencial</label><br>
+            <input type="radio" id="modOnline" name="modalidade" value="online" required>
+            <label for="modOnline">Online</label>
+            <br><br>
+
+            <label>Áreas de Interesse:</label><br>
+            <input type="checkbox" id="areaTec" name="area" value="tecnologia">
+            <label for="areaTec">Tecnologia</label><br>
+            <input type="checkbox" id="areaArte" name="area" value="arte">
+            <label for="areaArte">Arte e Cultura</label><br>
+            <input type="checkbox" id="areaNegocios" name="area" value="negocios">
+            <label for="areaNegocios">Negócios</label>
+            <br><br>
+
+            <label for="regiao">Região:</label>
+            <select id="regiao" name="regiao">
+                <option value="" disabled selected>Escolha sua região</option>
+                <option value="norte">Norte</option>
+                <option value="nordeste">Nordeste</option>
+                <option value="centro-oeste">Centro-Oeste</option>
+                <option value="sudeste">Sudeste</option>
+                <option value="sul">Sul</option>
+            </select>
+            <br><br>
+
+            <label for="corCracha">Cor do Crachá:</label>
+            <input type="color" id="corCracha" name="corCracha" value="#0000ff">
+            <br><br>
+
+            <label for="expectativa">Nível de Expectativa (Baixa a Alta):</label>
+            <input type="range" id="expectativa" name="expectativa" min="1" max="100">
+            <br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

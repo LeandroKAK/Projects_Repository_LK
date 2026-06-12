@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 38 - bootstrap </title>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ylDqE4qkCKKUEe9YpYNyFGSYyfzytdxZvQvoJdwMRQbc2Wk5jivwNhzQwwmjZEygsSfPN5uUeO3q2TAhSiKbbb8wOpe-tywA2aAY9IiBHvsF9Jb-cS7lMEShI2tUR6VGF_B5EEvU8sTCXp_0XevT-SGDQsekMp7rdd6W0Tbk0MjZcKmPZXwv_zVCp6VlAYVbzX8q0M3v65L4krRt78El6cF7R-QZV6J3PbCQGfTzgUARW1LUtohhr1wMazsNegjAb1hukn2pRXMbV3yVQi63LPufO1r-4T-oPBWIOYOGP9EPidNTFo4mRhbwHFC4IbcQwb5GvhsdOyFHKTcsVg2bgmUl2642z9rI-7rg9xxQavyzWy9Y3ectwSB1PVzan86zyq7yqRdTe5mRTcQp5yzyMBe7W2IcuwxZZDj-16i0UjhJ3gAVkQ_4cacYg2ycfYtm_ryltX5nU3W7G7Md06k3efa5io4hfYuqQZhb4ltuJa6w2vcx8W6fWEu7Cx00Tmtw71UmbK008Lbuj_7f0gJIfHv_adTOnkmEisav-aTAP-mc6Wavh1ddyvR2y18lJuyn3uHHrtP8X6H5CPw_FOFcJlpPF754tJGWYZbck1T4HgvTjPoaTf9sb9_vh5qU-rW7L283BA7cWOQVldsqhAJKTb6KZNzk0XjqfpSoqlNfNaNOpbHpVCmbcckf-kO-Ri4FPgTvc04CQA7uNxQXgNObiZrPRVEQXnJR9biJlUd49tu0b_3CdSe43o4BukqHXwfqoDvEj9MwWqzxD0y3RHFcITx4RuMzauKsfhfsHkMD0RqJ57WL2NAs83tUKkXeyt3dMFPkcwqtHUdIwAONvRduCuNBMzlrS9EScDyp-JDer0qyum8YufypVwnheCrAJzOsMYzmzyERIA42-shdNyKZoA2m86-GZBMxhIU14_kiSfHTttR9v74GFRW7gEPnVK-1TOsRNH5joGabZg-75BKFhdGW3r60jpiZUoYmzh43y3sE5moBPYUfHAGrmiO_0yHMmaNFj2F_-x7UuqvNphPZ0Lnmh7kuOP32ELbPMpM4owl5v-R0xEPzBnIPX0-uyaHFc5K5uR4yw6Lmz4UvcEmSmjgliz_oEbKkujOdjQZDW_j5QCuijC3Uyw7PsW7MxBJKaso3IJ7BxO4jpu15WFxBrV5OWGSeNw7451AWO6hq6xr4AzoVxEVxoMSRMv1DzJhOiFZgMFaWNu4Q3besMautaild-aBx_Z7zD-5M_78BJNQdqYPL__ca84kTq9dBaA5Tb4_EOAqxA4gFwBR-WPxakj1Gq6u0Uz3t5UUWzCoiO4SF9XuST6iGO59h3TCscskRjAijPJH9wq7C_L_uvtd3tD5NRA2Q-JMi_4xyxroPy_mjlFl_NoB3qiZibZ5qKFpzCm8GXVUiHecSwOAraHceZ-x0iUumK42XJbizfld7UTkgQ8Xb6mjhwQJq6g0wWu3tK4g_LQXrJ3KglSEL9_jDT031JaEkj9QFfk86XQ9E_nPQ2qz6IiNYlEojZvyzyKgueuP3VOYnxCL1hmZCMqcO65693s0i99E34GyNUVI1gYoCH6wwvX-_MNELlEtBCyCg_HWVqupDP4Ja2CKLkempwmEBReBxdC42EB1ta0-nj6JysVkPNM52Hk15MOZPaVJzO5cGisqBLMEUL_hD_Q1t8pbc8Nxg477eEnLI3JIBKLFmNIMLa4CX17vE4DoBm_38" nonce="3d76355ab9a389d74cc34bf9d7a19739" charset="UTF-8"></script></head>
+
+<body>
+    <div class="container-sm">
+        <h1>Bootstrap - table</h1>
+        <div class="alert alert-success" role="alert">
+            <h2>O que é o Bootstrap Table?</h2>
+
+            <p>
+                No desenvolvimento web, o componente <strong>Table do Bootstrap</strong> é uma ferramenta poderosa que
+                transforma tabelas HTML comuns em elementos modernos, totalmente responsivos e visualmente atraentes,
+                sem a necessidade de escrever código CSS do zero.
+            </p>
+
+            <p>
+                Por padrão, as tabelas nativas do HTML possuem um visual muito simples e antigo. O Bootstrap resolve
+                isso aplicando estilos predefinidos de espaçamento (<em>padding</em>), alinhamento, bordas sustis e
+                tipografia limpa assim que adicionamos a classe principal <code>.table</code> ao elemento.
+            </p>
+
+            <h3>Principais Vantagens:</h3>
+            <ul>
+                <li><strong>Responsividade Dinâmica:</strong> Ao envolver a tabela na classe
+                    <code>.table-responsive</code>, ela ganha uma barra de rolagem horizontal automática em telas de
+                    celulares, impedindo que o layout quebre.
+                </li>
+                <li><strong>Estilização Rápida:</strong> Permite adicionar recursos visuais avançados instantaneamente
+                    através de classes simples, como o efeito zebrado (<code>.table-striped</code>) e destaque ao passar
+                    o mouse (<code>.table-hover</code>).</li>
+                <li><strong>Cores Semânticas:</strong> Integra-se perfeitamente à paleta de cores do Bootstrap (como
+                    <em>primary</em>, <em>success</em> e <em>danger</em>) para colorir linhas ou células com base no
+                    significado dos dados apresentados.
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Exemplo do .table do bootstrap</h2>
+            <table class="table table-hover">
+                <thead class="bg-info">
+                    <tr>
+                        <th scope="col">NOME</th>
+                        <th scope="col">SOBRENOME</th>
+                        <th scope="col">TELEFONE</th>
+                        <th scope="col">EMAIL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">JOSEFA DOS DORES</th>
+                        <td>SILVS</td>
+                        <td>61 9999 9999</td>
+                        <td>JOSEFADASDORES@GMAIL.COM</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <h2>Outros exemplos de tabelas com bootstrap</h2>
+                <table class="table table-hover table-striped table-bordered">
+                    <thead class="bg-success">
+                        <tr>
+                            <th scope="col">NOME</th>
+                            <th scope="col">SOBRENOME</th>
+                            <th scope="col">TELEFONE</th>
+                            <th scope="col">EMAIL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">JOSEFA DOS DORES</th>
+                            <td>SILVS</td>
+                            <td>61 9999 9999</td>
+                            <td>JOSEFADASDORES@GMAIL.COM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

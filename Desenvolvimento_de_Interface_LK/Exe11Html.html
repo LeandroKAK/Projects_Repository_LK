@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 11 - HTML Formulários</title>
+</head>
+
+<body>
+    <h1>Exemplo 11 HTML - Formulários</h1>
+    <p>
+        Um <strong>formulário </strong> em HTML é uma estrutura de coleta de dados que utiliza tags específicas como,
+        form, label, input, button, fieldset e legend para descrever a função e o significado de cada campo. Diferente
+        de usar apenas divisores genéricos para fins estéticos, a semântica garante que <strong>navegadores, leitores de
+        tela e motores de busca</strong> compreendam a relação lógica entre os dados solicitados e seus rótulos,
+        aumentando a acessibilidade e a eficiência no processamento da informação.
+    </p>
+    <h2>Exemplo de Formulário</h2>
+    <form action="paginadestino.apsx" method="post">
+        <div>
+            <div>
+                <label for="">e-mail</label><br>
+                <input type="email" name="txtEmail" id="txtEmail"><br>
+
+            </div>
+            <div>
+                <label for="">Senha</label><br>
+                <input type="password" name="txtSenha" id="txtSenha"><br>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Autenticar</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

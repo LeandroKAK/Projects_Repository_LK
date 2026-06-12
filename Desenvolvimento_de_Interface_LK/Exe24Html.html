@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo 24 HTML - Introdução ao CSS</title>
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=1IPzuUdnEDQtS4tyIUwmlTVxnAaE6-K25B10QPt0jdrSxc97g2sSFGtIfJD6k5Y9-y_i1iJRIUAI1xWgn80PB6zeuGwwRFgORn5JmvzJ93KFlZTBHAfRlznnbNdFexkL4hGZ_BLfC9XQujAGLHCXC7lS9ZAAmBBJzIpj1hAr9ftUza5x7QMUVxsRpjtNfm-NCddxL4It49WBTyYn_e-8fOQMhcfk9bCLuq0p-kllzJWF1fnOJB_8K2MRwQjrtkwTlihXuNOYO_O_EB6NKIDFSkgWwcm7eQP40l8MRE9ppzjZhjIHRRIcOrqDsOmri85g4Tj3UlpWTD5QoOUivFnlcJDA73lIvPtGkQV3kB7qMJRQO_YMdqy3oEadMpiRK5Pv9P32DKFpZ5PMvovAmzkJOqdvr7mHhTF6TxGs0VL_EiZy48PrduERz-E33xaDrAwkF_hhf1AruPO6kkWQdTEdi7wl2ObAH2iZ1yqA0omaox-AA9BiQMf8j8le8pFb5tAILTYchHhcB-2ub5iD4r-s_JkMKeIUw2E-mXpQt2iKHMH9r7bLiZNklCyTiaicnaLmI4WruFuDigNzrJMHkY1nGiiz2JagVuX2c0kEz9pgX3Dt1XxKytmsC5580jyo_4OasMES7Gc1c9Q3doIxzINoyk2X-_hClUQuYzi5AFnj3lTRXLU4K5V-mIafx0Rn1o9ZamIzsuaUY4-FtYb91tmJk3lpospRGPdNu2ZnCK6C_j9yMyEdn-Eud9_qAwod8e_bmrBXDljZNbdYNp3IZ8sZS8_q5AsizlHB9b1HYIsXTYXPkv-GPSve_RZYnALWi-J7g_tFLExZF7rlDiAr0MfjcNjsriCnn7eWw_OV7RMC40rRg7DwVAtrd2tjT2YcOfqrcdzLwwyf5Ir2MLbfQzslw1tzgKePEXK4yxm0_ILzqEgIMbkQx8ZdsJdlWYV1dQ6WFWjLwE8xHo4PeW5GrKT66HJ2okp-nXM9XIqOj2df9FA74_SQxgK_i1_7zhTck8FB2IhAVXe0owdXPmt2FqMGWE6wZL38oph9QHJ5-kWsz6624VbOflZFNfJlamJHTe4yBQQNRTBzUazmUL4f9okszb3KD98Wohe5KjQlOhDclNpyr8DQcgdRoug8NfB1uhE8huBdkUcrMFsUhVESD9cy43J0gzxlhHYjQArozpOvQdOTv60pn4rOjemWx-_ZFdeM8eNVgF92AMS_b2DxXu0IDYLuLeBEVEiGNFsIJ5eJzLUsLZSPtXDPrMT9_7AcjMfxgaUEZp4lC8i4Fbk-YaQiUFhbV3IeHkEnmMFu18uANnTP8EnASNVac4caGUkmKjjyhiwJw2iV36OinXHFX8XefGkjhii5IZt5VQwiv_jPk9P0WP1w35Om5GsxFefx7tpJUfbJEIReEqsAY3Zlf6QsN7UFf9JZlYvvOWX19397URtGx-1iz0jTIY7U2XfFd1jjF8zSBu7PWAatHB_xkxc1zQ9PrNGL1D3-gkdskM0sWVWQB9nOyaRrMru1qyYRI00DqlejYY-gy07CnaGynfha1v4Bziz5HCDGi0uTDRQ65HlQiM2IKkEMs7dspr_xiB766b_F0JMYvQkU8LCKoxnq0Uxv1ODO1qJb5y0S4gR_SjGoW1m4JQgmVTcXU9KZhcVFZmANXW71NcN4aqjqye5wtArCU9Wd4Xq0LxHBNuUkj62NoSIHZRfVbKmlyhbhUPbN" nonce="cbf1e8493967e905625c1139205b31c0" charset="UTF-8"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      padding: 20px;
+      line-height: 1.8;
+    }
+
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    pre {
+      background-color: #e8e8e8;
+      border-left: 4px solid #3498db;
+      padding: 15px;
+      font-family: monospace;
+      overflow-x: auto;
+    }
+
+    .destaque {
+      font-weight: bold;
+      color: #e74c3c;
+    }
+
+    .alerta {
+      background-color: #fcf3cf;
+      padding: 5px 10px;
+      border-radius: 4px;
+      border: 1px solid #f1c40f;
+    }
+
+    .secundario {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+
+    #titulo-principal {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 10px;
+    }
+
+    #conceito-chave {
+      font-size: 1.1em;
+      border: 2px dashed #9b59b6;
+      padding: 10px;
+      margin: 15px 0;
+    }
+
+    #conclusao-aula {
+      background-color: #d5f5e3;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo-principal">Introdução ao CSS</h1>
+
+  <p class="destaque">CSS significa Cascading Style Sheets — Folhas de Estilo em Cascata.</p>
+  <p class="secundario">É a linguagem usada para definir a aparência dos elementos HTML de uma página web.</p>
+  <p>Com CSS é possível controlar cores, fontes, tamanhos, espaçamentos, bordas e muito mais.</p>
+
+  <h2 class="alerta">O que é uma Regra CSS</h2>
+
+  <p>Uma regra CSS é composta por um seletor e um bloco de declarações.</p>
+  <p class="destaque">O seletor indica quais elementos HTML serão estilizados.</p>
+  <p class="secundario">O bloco de declarações fica entre chaves e contém uma ou mais declarações.</p>
+  <p>Cada declaração é formada por uma propriedade, dois-pontos, um valor e ponto e vírgula.</p>
+
+  <p class="alerta">Exemplo de regra CSS:</p>
+  <pre id="conceito-chave">
+    p {
+      color: blue;
+      font-size: 16px;
+    }
+  </pre>
+
+  <p class="secundario">Neste exemplo, p é o seletor, color e font-size são propriedades, blue e 16px são os valores.</p>
+
+  <h2>Tipos de Seletores</h2>
+
+  <p class="destaque">Existem três tipos fundamentais de seletores CSS.</p>
+
+  <h3 class="secundario">Seletor de Tipo</h3>
+
+  <p>O seletor de tipo usa diretamente o nome da tag HTML.</p>
+  <p class="alerta">Ele afeta todos os elementos daquele tipo que existirem na página.</p>
+  <p>Possui a menor especificidade entre os três tipos.</p>
+
+  <p>Exemplos de seletor de tipo:</p>
+  <pre class="destaque">
+    h1 { }
+    p  { }
+    a  { }
+    li { }
+  </pre>
+
+  <p class="secundario">A regra acima com h1 afetará todos os títulos h1 da página.</p>
+  <p>A regra com p afetará todos os parágrafos da página.</p>
+
+  <h3>Seletor de Classe</h3>
+
+  <p class="destaque">O seletor de classe usa um ponto seguido do nome da classe.</p>
+  <p>Ele afeta apenas os elementos que possuem o atributo class com aquele nome.</p>
+  <p class="alerta">Uma mesma classe pode ser aplicada a vários elementos diferentes.</p>
+  <p class="secundario">Um mesmo elemento pode ter mais de uma classe ao mesmo tempo.</p>
+  <p>Possui especificidade intermediária — maior que o seletor de tipo.</p>
+
+  <p class="destaque">Exemplos de seletor de classe:</p>
+  <pre>
+    .destaque   { }
+    .alerta     { }
+    .secundario { }
+  </pre>
+
+  <p class="secundario">No HTML, a classe é aplicada assim:</p>
+  <pre class="alerta">
+    &lt;p class="destaque"&gt;Este parágrafo tem a classe destaque.&lt;/p&gt;
+    &lt;p class="alerta"&gt;Este parágrafo tem a classe alerta.&lt;/p&gt;
+  </pre>
+
+  <h3 class="destaque">Seletor de ID</h3>
+
+  <p>O seletor de ID usa uma cerquilha seguida do nome do id.</p>
+  <p class="alerta">Ele afeta somente o elemento que possui aquele id.</p>
+  <p class="secundario">Um id deve ser único na página — não pode se repetir.</p>
+  <p>Possui a maior especificidade entre os três tipos.</p>
+
+  <p>Exemplos de seletor de ID:</p>
+  <pre class="destaque">
+    #cabecalho { }
+    #rodape    { }
+  </pre>
+
+  <p class="alerta">No HTML, o id é aplicado assim:</p>
+  <pre>
+    &lt;header id="cabecalho"&gt;...&lt;/header&gt;
+    &lt;footer id="rodape"&gt;...&lt;/footer&gt;
+  </pre>
+
+  <h2>Especificidade</h2>
+
+  <p class="secundario">Quando dois seletores disputam a mesma propriedade em um elemento, vence o de maior especificidade.</p>
+  <p class="destaque">A ordem de especificidade do maior para o menor é: ID, Classe, Tipo.</p>
+  <p class="alerta">Em valores numéricos: ID vale 100, Classe vale 10, Tipo vale 1.</p>
+
+  <h2 class="secundario">Propriedades e Valores</h2>
+
+  <p>Uma propriedade é o aspecto visual que se deseja controlar.</p>
+  <p class="destaque">O valor define como aquela propriedade será aplicada.</p>
+
+  <h3>Propriedades de Texto</h3>
+
+  <p class="alerta">color — define a cor do texto.</p>
+  <pre>
+    color: red;
+    color: #FF0000;
+    color: rgb(255, 0, 0);
+  </pre>
+
+  <p class="secundario">font-size — define o tamanho da fonte.</p>
+  <pre class="destaque">
+    font-size: 16px;
+    font-size: 1.5em;
+    font-size: 1rem;
+  </pre>
+
+  <p>font-weight — define a espessura da fonte.</p>
+  <pre class="alerta">
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: 700;
+  </pre>
+
+  <p class="destaque">font-style — define o estilo da fonte.</p>
+  <pre>
+    font-style: normal;
+    font-style: italic;
+  </pre>
+
+  <p class="secundario">text-align — define o alinhamento horizontal do texto.</p>
+  <pre>
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+  </pre>
+
+  <p class="alerta">text-decoration — define a decoração do texto.</p>
+  <pre class="destaque">
+    text-decoration: none;
+    text-decoration: underline;
+    text-decoration: line-through;
+  </pre>
+
+  <p>line-height — define o espaçamento entre linhas.</p>
+  <pre class="secundario">
+    line-height: 1.5;
+    line-height: 24px;
+  </pre>
+
+  <h3 class="destaque">Propriedades de Fundo</h3>
+
+  <p class="alerta">background-color — define a cor de fundo do elemento.</p>
+  <pre>
+    background-color: yellow;
+    background-color: #FFFF00;
+    background-color: transparent;
+  </pre>
+
+  <h3>Propriedades de Espaçamento</h3>
+
+  <p class="secundario">margin — define o espaço externo ao redor do elemento.</p>
+  <pre class="destaque">
+    margin: 10px;
+    margin: 10px 20px;
+    margin: 10px 20px 5px 0;
+  </pre>
+
+  <p class="alerta">padding — define o espaço interno entre o conteúdo e a borda.</p>
+  <pre>
+    padding: 8px;
+    padding: 4px 12px;
+  </pre>
+
+  <h3 class="secundario">Propriedades de Borda</h3>
+
+  <p class="destaque">border — define a borda ao redor do elemento. Recebe largura, estilo e cor.</p>
+  <pre class="alerta">
+    border: 1px solid black;
+    border: 2px dashed red;
+    border: 3px dotted blue;
+  </pre>
+
+  <p>border-radius — define o arredondamento dos cantos da borda.</p>
+  <pre class="destaque">
+    border-radius: 4px;
+    border-radius: 50%;
+  </pre>
+
+  <div id="conclusao-aula">
+    <h2 class="destaque">Onde escrever o CSS</h2>
+
+    <p class="secundario">O CSS pode ser escrito em três lugares diferentes.</p>
+
+    <p class="alerta">Interno — dentro da tag style no head do documento HTML.</p>
+    <pre>
+      &lt;style&gt;
+        p { color: blue; }
+      &lt;/style&gt;
+    </pre>
+
+    <p class="destaque">Externo — em um arquivo separado com extensão .css, linkado no head.</p>
+    <pre class="secundario">
+      &lt;link rel="stylesheet" href="estilos.css"&gt;
+    </pre>
+
+    <p class="alerta">Inline — diretamente no atributo style do elemento HTML.</p>
+    <pre>
+      &lt;p style="color: blue;"&gt;Texto azul.&lt;/p&gt;
+    </pre>
+  </div>
+
+</body>
+</html>

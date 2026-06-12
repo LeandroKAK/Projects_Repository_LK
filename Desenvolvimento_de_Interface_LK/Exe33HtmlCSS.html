@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 33 HTML CSS</title>
+    <style>
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+        .div1{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            border-left: black;
+            padding: 20px;
+            margin: 25px;
+        }
+        .container{
+            display: flex;
+            background-color: lightskyblue;
+            padding: 20px;
+            margin: 25px;
+            border: solid blue 2px;
+        }
+        .item{
+            background-color: rgb(16, 155, 197);
+            color: #f4f4f4;
+            padding: 20px;
+            margin: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .row{
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Exemplo 33 HTML CSS - FlexBox</h1>
+        <p>O FlexBox é o módulo de layout CSS que foi projetado para facilitar a organização de elementos html de forma
+        responsiva e flexivel. Ele permite alinhar e distribuir espaços de forma automática dentro de um container.
+        Ele é muito utilizado na criação e construção de layouts complexos"
+        </p>
+        <h3>Exemplo das principais propiedades:</h3>
+        <p>No FlexBox possuimos diversas propiedades, é uma delas é o flex-direction que define a direção principal em
+        que os itens serão organizados dentro de um container flexivel
+        </p>
+    </div>
+    <div class="div1">
+        <h3>Flex-Direction row</h3>
+        <div class="container row">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h3>Flex-Direction row-reverse</h3>
+        <div class="container row-reverse">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h3>Flex-Direction column</h3>
+        <div class="container column">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+        <h3>Flex-Direction column-reverse</h3>
+        <div class="container column-reverse">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </div>
+</body>
+
+</html>

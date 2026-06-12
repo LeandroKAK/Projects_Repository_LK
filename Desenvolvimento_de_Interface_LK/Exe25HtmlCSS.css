@@ -1,0 +1,45 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    color: darkorange;
+}
+p{
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: justify;
+    color: deeppink;
+}
+ul{
+    background-color: #f0f0f0;
+    padding: 20px;
+    color: blue;
+    list-style-type: square;
+}
+.div1{
+    border-left: solid deeppink 6px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;    
+}
+.div2{
+    border-left: solid darkgreen 6px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.div3{
+    border-left: solid darkturquoise 6px;
+    border-radius: 8px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+#seletorh2{
+    color: darkred;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: double;
+}

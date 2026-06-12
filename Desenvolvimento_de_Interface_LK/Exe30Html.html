@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Exemplo 30 - Box Model </title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .div1{
+            background-color: deeppink;
+            margin: 60px 65px 75px;
+            padding: 80px 50px 25px 60px;
+            border-left: solid darkslateblue 8px;
+        }
+        .div2{
+            background-color: limegreen;
+            margin-top: 50px;
+            margin-right: 60px;
+            padding:80px;
+            border-left: solid darkgreen 8px;
+        }
+        .div3{
+            background-color: dodgerblue;
+            margin: 25px;
+            padding: 60px;
+            border-left: solid darkblue 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>Exemplo 30 - HTML CSS</h1>
+        <div class="div2">
+            <h2>BOX MODEL CSS</h2>
+            <p>Box model é um conceito fundamental que trata cada elemento HTML como uma caixa, um retangulo. Essa Caixa retangular possui propriedades que definem o posicionamento do elemento HTML na pagina.</p>
+            <p>O Box model possui tres propriedades fundamentais: Border, margin e padding.</p>
+            <ul>
+                <li>Border: A propriedade border é destinada a estilização da borda do componente HTML, ou seja, ela circunda o preenchimento do conteudo.</li>
+                <li>Padding: A propriedade Padding refere-se ao preenchimento da box model, ele é transparente e cria uma area livre ao redor do conteudo, que é onde aparecem textos e imagens.</li>
+                <li>Margin: A propriedade Margin refere-se ao espaço ou area apos a borda do componente HTML.</li>
+            </ul>
+        </div>
+        <div class="div3">
+            <h2>Margin e Padding</h2>
+            <p>Quando trabalhamos com as propriedades margin e padding podemos definir os valores de espaçamento externo, após a borda, ou interno(padding), para isso definimos valores para cima(Top), Direita(Right), a baixo (Bottom) e a esquerda(Left).  </p>
+            <p>Em todas situações podemos usar a regra do relógio e espelho.</p>
+            <h2>Regra do relógio</h2>
+            <p>A regra do relógio é uma forma rápiuda e organizada de definir propriedades de quatro lados do box model, usando apenas uma linha de codigo CSS</p>            <h2>Regra do espelho(comportamento de valores)</h2>
+            <p>A regra do espelho não é um termo técnico oficial, mas sim uma forma didática de entender como o CSS lida com afalta de valores na regra do relógio para manter a simetria. Neste exemplo, estamos aplicando as diversas propriedades de margin e padding.</p>
+        </div>
+    </div>
+    </body>
+    </html>
