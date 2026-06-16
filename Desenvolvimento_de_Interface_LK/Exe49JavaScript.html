@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 49 - JavaScript</title>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="alert alert-success" role="alert">
+            <h1>Exemplo 49 - JavaScript Vetores</h1>
+            <h2>Uso dos métodos (Push, pop, Sort, LastIndex0f)</h2>
+            <script>
+                var vetor1 = []
+                vetor1.push("JOSÉ");
+                vetor1.push("MARIA");
+                vetor1.push("MARA");
+                vetor1.push("REINALDO");
+                vetor1.push("BRUNO");
+                vetor1.push("RAFAEL");
+                vetor1.push("MICHELLE");
+                vetor1.push("LIRIS");
+                vetor1.push("JOÃO");
+                vetor1.push("PEDRO");
+                vetor1.push("MARCOS");
+                vetor1.push("SIMONE");
+                vetor1.push("SANDRA");
+                vetor1.push("HUGO");
+                vetor1.push("UM NOME QUALQUER");
+                document.write("<h2>Seja o vetor criado e preenchido com o push descrito abaixo</h2>");
+                document.write("<br>");
+                document.write("<h4>Vetor1: [" + vetor1 + "]<h4>");
+                document.write("<br>");
+                document.write("<h3>Usando o método POP para remover o último elemento da lista. Se aplicarmos ele multiplas vezes, estaremos removendo os elementos na quantidade de vezes necessária. Neste exemplo vamos aplicar o método POP 3 vezes, análise a configuração do vetor1</h3>");
+                vetor1.pop();
+                vetor1.pop();
+                vetor1.pop();
+                document.write("<br>");
+                document.write("<h4>Vetor1: [" + vetor1 + "]<h4>");
+                document.write("<br>");
+                document.write("<h3>Usando o método indexOf para descobrir a partir do elemento do vetor o seu índice.</h3>");
+                document.write("<br>");
+                var indice = vetor1.indexOf("RAFAEL");
+                document.write("<h3>O índice do elemento do vetor 1, chamado RAFAEL é: "+indice+"</h3>");
+                vetor1.push("RAFAEL");
+                vetor1.push("BRUNO");
+                vetor1.push("BRUNO");
+                vetor1.push("BRUNO");
+                vetor1.push("MICHELLE");
+                document.write("<br>");
+                document.write("<h5>Novo Vetor1: [" + vetor1 + "]<h5>");
+                document.write("<br>");
+                document.write("<h3>Usando o método LastIndexOf para descobrir a partir do elemento do vetor a sua última ocorrência, ou seja a sua última posição no vetor, neste exemplo estamos usando o valor BRUNO. Analise o vetor 1 acima e verifique abaixo se o índice indicado corresponde ao último índice.</h3>");
+                var ultimoIndice = vetor1.lastIndexOf("BRUNO");
+                document.write("<br>");
+                document.write("<h3>O último índice do elemento do vetor1 chamado BRUNO é: "+ultimoIndice+"</h3>")
+                document.write("<br>");
+                document.write("<h3>Para Ordenar o vetor1 usaremos o método SORT() que ordenara de forma crescente o nosso vetor. Analise a aplicação do método SORT() abaixo</h3>")
+                document.write("<br>");
+                document.write("<h5>Vetor1 Ordenado: [" + vetor1.sort() + "]<h5>");
+            </script>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
